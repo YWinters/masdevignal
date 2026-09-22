@@ -1,0 +1,48 @@
+@font-face {
+    font-family: imperator;
+    src: url(../fonts/ImperatorBronzeSmallCaps.ttf);
+}
+
+.daydreamer {
+    font-family: imperator;
+}
+
+.pointer:hover {
+	cursor: pointer;
+}
+
+
+.triangle-end {
+    position: relative;
+    background-color: #eaeaea;
+
+}
+.triangle-end::before { /* Magic Happens Here!!! */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 0; 
+    display: block;
+    border-right: 30px solid transparent;
+    border-bottom: 26px solid transparent;
+    border-top: 26px solid #e74c3c;
+}
+
+.triangle-start {
+    position: relative;
+    background-color: #eaeaea;
+}
+.triangle-start::before { /* Magic Happens Here!!! */
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0; 
+    height: 0; 
+    display: block;
+    border-left: 30px solid transparent;
+    border-top: 26px solid transparent;
+    border-bottom: 26px solid #e74c3c;
+}
